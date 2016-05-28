@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Web Starter Application</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="style.css" />
+	<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+	<script src="post.js"></script>
+</head>
+<body>
+	<h1>upload audio file</h1>
+	<form name='uploadAudioFile' method='post' enctype="multipart/form-data" onsubmit='uploadAudioFile(); return false; '>
+		<input type='file' id='file' name='file' />
+		<br />
+		<label for="documentName">Document name</label><input type='text' id='documentName' name='documentName' />
+		<br />
+		<label for="link">Video Link URL</label><input type='text' id='link' name='link' />
+		<button type='button' onclick='load(); '>Submit</button>
+	</form>
+</body>
+</html>
